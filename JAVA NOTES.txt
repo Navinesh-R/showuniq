@@ -1,0 +1,495 @@
+why public in starting in class file?
+why default value static variable ,instance,local?
+what is jit?
+what is object and class?
+what is object?
+what is default value?
+what is initilazition and declaration?
+what is state?
+what is behaviour?with example?
+What is Architecture-neutral?
+what is jvm
+what is jdk
+what is jre
+why java is plateform independent?
+why jdk is plateform dependent?
+father of java?
+what is robust? 
+what is multithreading*?
+how to jdk works
+why no pointer in java?
+why java is dynamic?
+why java is secure?
+why java is protable?
+what is heap?and how java heap program works with example?
+what is (java stack)?how java java stack works with example?
+java started develop year?
+java currently owns company?
+first name of java?
+what is exception handling in java?
+what is bitwise operator and perpose of bitwise operator?
+
+
+
+
+
+
+
+
+
+Ep - 1  MODULE 1
+
+JAVA
+
+HIGH LEVEL PROGRAMMING(SET OF INSTRUCTIONS)LANGUAGE
+
+FATHER OF JAVA -JAMES GOSLING
+
+1991 GREEN TEAM --STARTED TO DEVELOPE JAVA
+1995 SUN MICROSYSTEM
+ORACLE CURRENTLY OWNS IT .
+
+GREEN TALK --->OAK --->JAVA
+
+MOBILE APP
+WEB APPLICATION
+GAMES
+DESKTOP
+ENTERPRISE
+
+Ep-2 MODULE 2
+
+search what is jvm
+search what is jdk
+search what is jre 
+
+FEATURES OF JAVA
+
+SIMPLE
+Object Oriented
+   state and behaviour
+	outer appreance state
+	action all behaviour
+platform independent(java) class file run any where main jdk
+secured 
+      class file only see bytecode only view output 
+portable
+	easy to cary
+	windows class run mac
+distributed using internet protocol	
+cannot hack java
+	bytecode class share
+Robust --strong memory management
+	garbage collector
+		unrefernce object unused memory
+	no pointers
+                one variable two address
+	exception handling - flow distube
+			
+	strongly typed
+ 
+Architecture-neutral
+	accupy same storage/ bit and byte architecture
+high performance
+	because of jit
+		byte to mechine code to human readable code
+		interpreter overcome
+multithreading*
+	
+Dynamic
+		
+
+Ep - 3 module 3
+
+THIS VIDEO ABOUT JDK
+
+JDK -JAVA DEVELOPMENT KIT
+----->IS A software development environment which is used
+to develop the java application
+
+
+filename.java --->compile---->classname.class
+(high level)                  byte code
+
+JRE - JAVA RUNTIME ENVIRONMENT
+JVM - JAVA VIRTUAL MACHINE
+JIT - JUST IN TIME & interpreter  
+
+JAVA --PLATFORM INDEPENDENT
+JDK --PLATFORM DEPENDENT
+
+
+		.class file -  ss loader sub system
+		runtime data areas
+class data store (Method Area) - static data
+(Heap) - object releated data,object depend data store
+(java stack) -
+(pc Register)
+(native method stack)
+
+			^
+(interpreter)( jit  compiler)<->(native method interface)<-(java native libraries)
+execution engine  
+^
+|
+^
+operating system
+
+Ep - 4 MODULE 4
+
+JAVA INSTALLATION PROCESS
+
+CLASS AND OBJECT
+
+CLASS 
+	->BLUEPRINT OF OBJECT
+	->IT HAS BOTH STATE AND BEHAVIOURS BUT
+	LOGICAL VIEW ONLY.
+	->it shares the common properties and common behaviours
+	->it doesn't have a memory
+	-> one class name
+
+	syntax	
+
+	access_modifier keyword	class class_name
+	{
+
+	}
+
+	class sample
+	{
+	
+	}
+
+OBJECT
+	->INSTANCE OF CLASS OR REAL TIEM ENTITY
+     OR COMBINATION OF STATE AND BEHAVIOURS
+	->it has memory allocation
+
+	syntax	
+
+	class_name reference_variable=new defaultconstructor;
+
+	Sample obj=new Sample();	
+	new Sample();---object creation
+	new -- keyword(memory allocation)
+
+Vignesh teach ***************************
+
+class Student{
+
+String name; //state(data)
+boolean isPresent; // state(data)
+
+
+boolean isStudentPresentToday(){
+	return isPresent;
+}
+
+}
+
+Student s1 = new Student("divya", true);
+
+s1.isStudentPresentToday();
+
+******************************************* 
+
+Ep - 5 MODULE 5
+
+
+//public cannot access another folder
+^
+public class SamplePrgm
+{
+public static void main(String[] args)//perameter and predefind class
+			^
+			user defind class
+{
+			
+ System.out.println("hello");
+//predefind class.reference.method
+}
+
+}
+
+public -- access modifier
+static -- keyword(memory allocation while class loading)
+void --non return type
+main -- method name
+String[] -- can give multiple String inputs
+predefaind class and user defined class
+
+Ep - 5 MODULE 6
+
+= operator
+5 operand
+
+DATA TYPES
+
+	->it specify the size and type of the value
+	->two types
+		1.primitive data type
+		2.non primitive data type
+1.primitive data type
+	sizes are already fixed
+
+
+numerical,holenumber,positive or negative(default value -0)
+varible,container,lable,identifer
+ 	byte (1 byte)	8bit vachi range calculate pannuom-128 to + 127 size /size cal formula
+	short (2 bytes) 
+	int	(4 bytes)
+ 	long	(8 bytes)100000000L
+
+decimal(default value -0)
+	float	(4 bytes) f=4.11111111111111f; 14 point after number
+	double	(8 bytes) d=23.1111111111111111111d; 18 point after number
+no size {
+	char -single character (2 bytes) (ascii)(default value-/u0000)
+	boolean -true / false (1 bit)(default value -false)
+
+}
+-2^n-1 to + (2^n-1)-1
+1 byte=8 bit
+
+-2^8-1 to +(2^8-1)-1
+
+2.Non primitive data type
+	size is not fixed
+
+	Array
+	String - null
+	class
+	Interface
+
+	byte a=10;
+	byte-- data type
+	a -- variable name
+	10-- value
+	= -->assignment operator
+
+Ep - 7 Module 7
+
+VARIABLES
+	->Variables is a container user to storing or holding value.
+	->name of the memory location.
+	->vary+able we can change the value of the variable.
+
+variable declaration --int a;
+and variable initialization int a = 9;
+
+types of variable
+	1.instance variable
+	2.static variable
+	3.local variable
+
+Instance Variable
+
+ -> if the value of the variable varied from object to object then such type of variables are know as instance variable
+->inside class out side method
+method out side,constuctor out side ,block out side
+->within the class and outside the methods or blocks or 
+constructor.
+->instance varible will be created at the time of 
+object creation and destroyed at the time of object
+destruction 
+->we cannot access instance variable directly into static
+methods but we can access by using object reference.
+*->instance variable is also know as attributes or object 
+level variables.
+->default value is provided by jvm if we are not
+performing the initialization.
+
+
+class Student
+String name;
+int mark;
+int rollno;
+
+class SampleProgram2
+{
+int a = 100;//instance variable
+int b;//instance variable
+
+public static void main(String[]args)
+{
+SampleProgram2 obj = new SampleProgram2();
+ System.out.println(obj.a);
+}
+}
+
+Ep - 8 Module - 8
+
+Static variable
+->if the value of the variable not are varied from
+object to object .then not required to declare th
+variable are instance.
+->within the class and outside the method or constructor
+or blocks,using static variables.
+->compile time memory allocate not run time allocate.
+->class name vachi call panna mudium object vachium call pannalam
+->we can access the static variable using class name
+name.
+->instance variable cannot call directly static method
+reference
+->we can access the static variable both instance variable and static method.\
+->jvm will provide the default value for the static variable if we are not perfoming the initialization
+
+
+
+Student
+ String name;//Instance
+ int rollno;//Instance
+ String schname;//static 
+
+SampleProgram2 - run
+
+1)start jvm
+2)create and start the thread
+3)locate the class file
+4)load the class file -->static variables created
+5)executing the main method
+6)unload the class file-->static variable distroyed
+7)terminate the thread
+8)shut down jvm
+
+static varible default value jvm
+	declare
+	initialize pannlana 
+
+class SampleProgram2
+{
+int a = 100;//instance variable
+int b;//instance variable
+static String name ="java//static variable
+static String s;
+int var1 = 1000;
+static var2 = 2000;
+public static void main(String[]args)
+{
+SampleProgram2 obj = new SampleProgram2();
+ System.out.println(obj.a);
+System.out.println(obj.b);
+System.out.println(SampleProgram2.name);
+System.out.println(SampleProgram2.s);
+}
+}
+____________________------------------
+class SampleProgram3
+{
+int var1=1000;
+static int var2=1001;
+public static void main(String []args)
+{
+SampleProgram3 obj = new SampleProgram3();
+System.out.println("instance var:"+obj.var1);
+System.out.println("instance var:"+var2);
+
+obj.var1=1111;
+var2=233;
+System.out.println("instance var:"+obj.var1);
+System.out.println("instance var:"+var2);
+
+SampleProgram3 obj1 =new SampleProgram3();
+System.out.println("Instance var"+obj1.var1);
+System.out.println("Instance var"+obj1.var2);
+
+}
+}
+
+Ep - 9 Module 9
+
+Local variable
+
+->IF temporary requirement is need then the programmer
+will give the variable inside the methodor constructor are block.
+->we can access only inside the methods or blocks
+or constructor.
+->local variable will be created while the method is 
+creating ,and once the method is finished it execution the
+local variable automatically destroyed.
+
+
+
+int d = 100;
+System.out.println(d);
+
+Ep -10 Module 10
+
+Operators
+->Operator is a symbol used to perform some operation
+
+Types of Operators
+1.unary operators pre post -- ++
+2.arithmetic operators+-*/%
+3.comparision operators or relational operators==,!=,>,<,>=,<=
+it returns boolean
+4.logical operators
+5.bitwise operator
+6.shift operator
+7.assignment operator
+8.ternary operator
+
+1.unary operators
+
+ INCREMENT OPERATOR(++)
+    PRE INCREMENT(++a) 
+    POST INCREMENT(a++)
+ 
+DECREMENT OPERATOR(--)
+    PRE DECREMENT(--a)
+    POST DECREMENT(a--)
+
+int a=10;
+System.out.println(++a);//11
+int b=20;
+System.out.println(b++);//20
+System.out.println(b++);//21
+
+class SampleProgram
+{
+public static void main(String[]args)
+{
+int a = 10
+System.out.println(++a);//11
+System.out.println(a++);//11 //12
+System.out.println(a);//12
+
+int b=20;
+System.out.println(--b);
+}
+}
+
+Ep 11 MODULE 11
+
+
+4.logical operators
+IT RETURNS BOOLEAN VALUE
+&& 
+||
+!
+5.bitwise operator
+&
+|
+^
+~
+<<
+>>
+>>>
+6.shift operator
+7.assignment operator
+8.ternary operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

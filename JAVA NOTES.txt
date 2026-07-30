@@ -28,13 +28,9 @@ java currently owns company?
 first name of java?
 what is exception handling in java?
 what is bitwise operator and perpose of bitwise operator?
-
-
-
-
-
-
-
+multiple variable how to print using object?
+what is constructor 
+why java interview ask explain System.out.println and system,printstream?
 
 
 Ep - 1  MODULE 1
@@ -481,15 +477,3 @@ IT RETURNS BOOLEAN VALUE
 8.ternary operator
 
 
-
-
-
-
-
-
-
-
-
-
-
-	

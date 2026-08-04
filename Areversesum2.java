@@ -20,6 +20,7 @@
     }
 }
 */
+/* 
 public class Areversesum2{
     public static void main(String[]args){
         hello obj = new hello();
@@ -34,8 +35,27 @@ class hello{
         while(number!=0){
             empty = number % 10;
             reverse = empty;
-            System.out.println(reverse);
+            System.out.print(reverse);
             number = number / 10;
         }
     }
 }
+    */
+   class Areversesum2{
+    void Output(){
+            int a = 6789;
+            int empty;
+            int reverse = 0;
+            while(a != 0){
+                empty = a % 10;
+                reverse += empty;
+                
+                a = a / 10;
+            }
+            System.out.println(reverse);
+    }
+    public static void main(String[] args) {
+        Areversesum2 obj =new Areversesum2();
+        obj.Output();
+    }
+   }

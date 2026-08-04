@@ -31,6 +31,9 @@ what is bitwise operator and perpose of bitwise operator?
 multiple variable how to print using object?
 what is constructor 
 why java interview ask explain System.out.println and system,printstream?
+learn about shapes
+learn maths
+learn keyboard symbols names
 
 
 Ep - 1  MODULE 1
@@ -477,3 +480,75 @@ IT RETURNS BOOLEAN VALUE
 8.ternary operator
 
 
+Ep 18 MODULE 18
+
+constructor
+-----------
+
+-->constructor is used to initialize the object.
+-->also used to initialize the instance variables.
+-->constructor name should same as class name.
+-->we cannot use return type,keywords likes static,
+	final,abstract….
+-->we can use access modifier.
+-->it's also called as special type of method
+-->whenever the object is creater constructor called automatically.
+
+Types
+Default Constructor
+no argument constructor
+parameteraised constructor
+
+class A
+{
+     public A(){
+	}
+}
+
+A obj = new A();
+
+public class Student{
+Student()
+{
+System.out.println("hello world");
+}
+public static void main(String[]args)
+{
+Student obj = new Student();
+}
+}
+
+-------------------------------------------
+public class Student{
+int rollno;
+String name;
+Student(int rollno1,String name1)
+{
+rollno = rollno1;
+name = name1;
+System.out.println("hello world");
+}
+public static void main(String[]args)
+{
+Student obj = new Student(10,"a");
+System.out.println("ob.name);
+}
+}
+---------------------------------------
+public class Student{
+int rollno;
+String name;
+void method(int rollno1,String name1)
+{
+rollno = rollno1;
+name = name1;
+
+}
+public static void main(String[]args)
+{
+Student obj = new Student();
+obj.method(1,"kanish");
+obj.method(2,"Hari");
+System.out.println(obj.rollno+" "+obj.name);
+}
+}

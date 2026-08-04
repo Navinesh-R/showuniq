@@ -106,6 +106,25 @@ public class BAnimal1 {
    */
 
    
-   class Aalltry{
-    
-   }
+   //Constructor
+   //{
+  class Aalltry{
+    int a;
+    void hello(){
+        a = 90;
+        System.out.println(a);
+    }
+    public static void main(String[] args) {
+        Aalltry obj = new Aalltry();
+        obj.hello();
+    }
+  } 
+
+
+
+
+
+
+
+
+//}
